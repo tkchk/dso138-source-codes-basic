@@ -28,8 +28,8 @@
 #TCHAIN_PREFIX = arm-eabi-
 #TCHAIN_PREFIX = arm-elf-
 TCHAIN_PREFIX = arm-none-eabi-
-#REMOVE_CMD=rm
-REMOVE_CMD=cs-rm
+REMOVE_CMD=rm
+# REMOVE_CMD=cs-rm
 
 #FLASH_TOOL = OPENOCD
 #FLASH_TOOL = LPC21ISP
@@ -253,7 +253,7 @@ CFLAGS += -mlong-calls
 #CFLAGS += -mapcs-frame 
 #CFLAGS += -fomit-frame-pointer
 CFLAGS += -ffunction-sections -fdata-sections
-CFLAGS += -fpromote-loop-indices
+# CFLAGS += -fpromote-loop-indices
 CFLAGS += -Wall -Wextra
 CFLAGS += -Wimplicit -Wcast-align -Wpointer-arith
 CFLAGS += -Wredundant-decls -Wshadow -Wcast-qual -Wcast-align
